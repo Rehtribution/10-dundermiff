@@ -12,13 +12,23 @@ const createTeam = (team) => {
 
     const createEngineer = (engineer) => {
         return `
-
+        <div class="engineer-container">
+        <h1>Name: ${engineer.getName()}</h1>
+        <p>Email: ${engineer.getEmail()}</p>
+        <p>ID: ${engineer.getId()}</p>
+        <p>Github: ${engineer.getGithub()}</p>
+    </div>
         `
     }
 
     const createIntern = (intern) => {
         return `   
-        
+        <div class="intern-container">
+                <h1>Name: ${intern.getName()}</h1>
+                <p>Email: ${intern.getEmail()}</p>
+                <p>ID: ${intern.getId()}</p>
+                <p>School: ${intern.getSchool()}</p>
+            </div>
         `
     }
 
