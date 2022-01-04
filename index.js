@@ -1,14 +1,16 @@
+const inquirer = require("inquirer");
+const fs = require("fs");
+const create = require('./src/template')
+
+//creates the team members requiring the associated lib files
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
-const inquirer = require("inquirer");
-const fs = require("fs");
-
-const create = require('./src/template')
-
+//sets the team array
 const team = []
 
+//node question prompts
 inquirer.prompt([
     {
         type: 'input',
@@ -32,10 +34,12 @@ inquirer.prompt([
     },
 ]).then(answers => {
     const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber)
+    //pushes new team member into empty array
     team.push(manager)
     whatNext()
 })
 
+//prompt what action to take after each team member has been created
 function whatNext() {
     inquirer.prompt([
         {
@@ -43,9 +47,9 @@ function whatNext() {
             name: 'whatNext',
             message: 'What would you like to do next?',
             choices: ['Add Engineer', 'Add Intern', 'Done']
-        }, 
+        },
     ]).then(answer => {
-        if(answer.whatNext === 'Add Engineer') {
+        if (answer.whatNext === 'Add Engineer') {
             addEngineer()
         } else if (answer.whatNext === 'Add Intern') {
             addIntern()
@@ -79,6 +83,7 @@ function addEngineer() {
         },
     ]).then(answers => {
         const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.github)
+        //pushes new team member into empty array
         team.push(engineer)
         whatNext()
     })
@@ -108,11 +113,13 @@ function addIntern() {
         },
     ]).then(answers => {
         const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.school)
+        //pushes new team member into empty array
         team.push(intern)
         whatNext()
     })
 }
 
+//done will create the team.html file
 function done() {
     console.log(team);
     fs.writeFile('team.html', create(team), err => err ? console.log(err) : console.log("HTML page created!"));

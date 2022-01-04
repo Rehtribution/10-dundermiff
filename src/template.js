@@ -1,3 +1,4 @@
+//sets the html framework for each team member and retrieves data for each category
 const createTeam = (team) => {
     const createManager = (manager) => {
         return `
@@ -16,10 +17,11 @@ const createTeam = (team) => {
         <h1>Name: ${engineer.getName()}</h1>
         <p>Email: ${engineer.getEmail()}</p>
         <p>ID: ${engineer.getId()}</p>
-        <p>Github: ${engineer.getGithub()}</p>
+        <p><a href="https://api.github.com/users/${engineer.github}">Github: ${engineer.getGithub()}</a></p>
     </div>
-        `
+    `
     }
+// api returns profile data but does not link to the github
 
     const createIntern = (intern) => {
         return `   
@@ -32,15 +34,16 @@ const createTeam = (team) => {
         `
     }
 
+    //team members array
     const members = []
-
+//filtering and mapping through entries to return the associated data
     members.push(team.filter(item => item.getRole() === "Manager").map(manager => createManager(manager)))
     members.push(team.filter(item => item.getRole() === "Engineer").map(engineer => createEngineer(engineer)))
     members.push(team.filter(item => item.getRole() === "Intern").map(intern => createIntern(intern)))
     return members.join("")
 }
 
-
+//sets the html framework and calls the createTeam const at the top of the page
 module.exports = (team) => {
     return `
     <!DOCTYPE html>
