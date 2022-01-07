@@ -59,6 +59,7 @@ function whatNext() {
     })
 }
 
+//function to add engineer
 function addEngineer() {
     inquirer.prompt([
         {
@@ -89,6 +90,7 @@ function addEngineer() {
     })
 }
 
+//function to add intern
 function addIntern() {
     inquirer.prompt([
         {

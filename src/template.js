@@ -1,5 +1,6 @@
 //sets the html framework for each team member and retrieves data for each category
 const createTeam = (team) => {
+    //framework for manager
     const createManager = (manager) => {
         return `
             <div class="manager-container">
@@ -10,22 +11,22 @@ const createTeam = (team) => {
             </div>
         `
     }
-
+    //framework for engineer
     const createEngineer = (engineer) => {
         return `
-        <div class="engineer-container">
-        <h1>Name: ${engineer.getName()}</h1>
-        <p>Email: ${engineer.getEmail()}</p>
-        <p>ID: ${engineer.getId()}</p>
-        <p><a href="https://api.github.com/users/${engineer.github}">Github: ${engineer.getGithub()}</a></p>
-    </div>
-    `
+            <div class="engineer-container">
+                <h1>Name: ${engineer.getName()}</h1>
+                <p>Email: ${engineer.getEmail()}</p>
+                <p>ID: ${engineer.getId()}</p>
+                <p><a href="https://api.github.com/users/${engineer.github}">Github: ${engineer.    getGithub()}</a></p>
+            </div>
+        `
     }
 // api returns profile data but does not link to the github
-
+    //framework for intern
     const createIntern = (intern) => {
         return `   
-        <div class="intern-container">
+            <div class="intern-container">
                 <h1>Name: ${intern.getName()}</h1>
                 <p>Email: ${intern.getEmail()}</p>
                 <p>ID: ${intern.getId()}</p>
