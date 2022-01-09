@@ -1,0 +1,70 @@
+/* global styling */
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: xx-large;
+}
+
+:root {
+    --first: white(190, 80, 80);
+    --second: black;
+    --third: rgb(107, 112, 92);
+    --fourth: rgb(107, 112, 92);
+}
+/* global styling end  */
+
+header {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 16px 0px 16px 0px;
+    box-shadow: 5px 10px;
+    margin-bottom: 5px;
+    background-color: var(--first);
+
+}
+
+body {
+    font-family: "american typewriter";
+    background-color: var(--first);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--second);
+}
+
+/* main content start */
+.card {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 16px 0px 16px 0px;
+    margin: 20px;
+    box-shadow: 5px 10px;
+    text-shadow: 2px 2px 2px var(--third);
+}
+
+.card:hover {
+    box-shadow: 0px 15px 20px var(--third);
+    transform: translateY(-7px);
+}
+
+.column {
+    flex: 50%;
+    width: 50%;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 4px 4px 2px var(--third);
+}
+
+p, a {
+    font-size: large;
+}
+/* main content end */
+
+footer {
+    border-top: 3px solid black;
+}
+
