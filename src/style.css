@@ -3,13 +3,13 @@
     margin: 2px;
     padding: 2px;
     box-sizing: border-box;
-    font-size: xx-large;
+    font-size:large;
 }
 
 :root {
     --first: white(190, 80, 80);
     --second: black;
-    --third: rgb(107, 112, 92);
+    --third: rgb(73, 73, 73);
     --fourth: rgb(107, 112, 92);
 }
 /* global styling end  */
@@ -25,23 +25,30 @@ header {
 }
 
 body {
-    font-family: "american typewriter";
+    font-family: "american typewriter", 'Courier New', Courier, monospace;
+
     background-color: var(--first);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     color: var(--second);
 }
 
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 /* main content start */
 .card {
+    display: grid;
+    min-height: 200px;
+    min-width: 200px;
     width: 100%;
     border: 2px solid black;
     border-radius: 16px 0px 16px 0px;
     margin: 20px;
     box-shadow: 5px 10px;
-    text-shadow: 2px 2px 2px var(--third);
 }
 
 .card:hover {
@@ -55,16 +62,50 @@ body {
 }
 
 h1 {
-    font-size: 60px;
-    text-shadow: 4px 4px 2px var(--third);
+    font-size: 3em;
+    text-shadow: 3px 4px 2px var(--third);
+} 
+
+h2 {
+    font-size: x-large;
+    text-shadow: 1px 2px 2px var(--third);
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: large;
 }
 
 p, a {
-    font-size: large;
+    font-size: medium;
+}
+
+#manager {
+    font-weight: bold;
+    font-style: italic;
 }
 /* main content end */
 
+/* footer height all weird  */
 footer {
+    font-size: small;
     border-top: 3px solid black;
+    padding-bottom: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
 }
 
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}

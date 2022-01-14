@@ -4,7 +4,7 @@ const createTeam = (team) => {
     const createManager = (manager) => {
         return `
             <div class="card">
-                <h1>${manager.getName()}</h1>
+                <h2>${manager.getName()}</h2>
                 <p>${manager.getEmail()}</p>
                 <p>ID: ${manager.getId()}</p>
                 <p>Office Number: ${manager.getOfficeNumber()}</p>
@@ -15,10 +15,10 @@ const createTeam = (team) => {
     const createEngineer = (engineer) => {
         return `
             <div class="card">
-                <h1>${engineer.getName()}</h1>
+                <h2>${engineer.getName()}</h2>
                 <p>${engineer.getEmail()}</p>
                 <p>ID: ${engineer.getId()}</p>
-                <p><a href="https://api.github.com/users/${engineer.github}">Github: ${engineer.    getGithub()}</a></p>
+                <p><a href="https://api.github.com/users/${engineer.github}">Github: ${engineer.getGithub()}</a></p>
             </div>
         `
     }
@@ -27,7 +27,7 @@ const createTeam = (team) => {
     const createIntern = (intern) => {
         return `   
             <div class="card">
-                <h1>${intern.getName()}</h1>
+                <h2>${intern.getName()}</h2>
                 <p>${intern.getEmail()}</p>
                 <p>ID: ${intern.getId()}</p>
                 <p>School: ${intern.getSchool()}</p>
@@ -63,7 +63,11 @@ module.exports = (team) => {
     
     <!--main content start-->
     <body>
-        <div>${createTeam(team)}</div>
+        <div class="container">
+        <div class="card-deck">
+        ${createTeam(team)}
+        </div>
+        </div>
     </body>
     <!--main content end-->
     
