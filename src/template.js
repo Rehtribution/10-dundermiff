@@ -5,7 +5,7 @@ const createTeam = (team) => {
         return `
             <div class="card">
                 <h2>${manager.getName()}</h2>
-                <p><a href = ${manager.getEmail()}>${manager.getEmail()}</a></p>
+                <p><a href="mailto: ${manager.getEmail()}" target="_blank">${manager.getEmail()}</a></p>
                 <p>ID: ${manager.getId()}</p>
                 <p>Office Number: ${manager.getOfficeNumber()}</p>
             </div>
@@ -16,7 +16,7 @@ const createTeam = (team) => {
         return `
             <div class="card">
                 <h2>${engineer.getName()}</h2>
-                <p><a href = ${engineer.getEmail()}>${engineer.getEmail()}</a></p>
+                <p><a href="mailto: ${engineer.getEmail()}" target="_blank">${engineer.getEmail()}</a></p>
                 <p>ID: ${engineer.getId()}</p>
                 <p><a href="https://github.com/${engineer.github}">Github: ${engineer.getGithub()}</a></p>
             </div>
@@ -27,7 +27,7 @@ const createTeam = (team) => {
         return `   
             <div class="card">
                 <h2>${intern.getName()}</h2>
-                <p><a href = ${intern.getEmail()}>${intern.getEmail()}</a></p>
+                <p><a href="mailto: ${intern.getEmail()}" target="_blank">${intern.getEmail()}</a></p>
                 <p>ID: ${intern.getId()}</p>
                 <p>School: ${intern.getSchool()}</p>
             </div>
@@ -79,4 +79,3 @@ module.exports = (team) => {
     `
 }
 
-// issues: email link not opening email service on click
