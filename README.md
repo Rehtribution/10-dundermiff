@@ -57,13 +57,13 @@ This is the tenth Challenge homework assignment and will meet the acceptance cri
 
 ## Screenshot/Media
 
-
-
-<https://drive.google.com/file/d/18o4zFH1GHJCwxWYoMX-e2L15-nEe4EP5/preview>
+https://drive.google.com/file/d/18o4zFH1GHJCwxWYoMX-e2L15-nEe4EP5/preview
 
 
 ## Deployed Link
-- 
+
+https://rehtribution.github.io/10-dundermiff/
+
 ## Usage
 This project aquires user input thorugh terminal prompts to generate a file containing a list of team members.
 ## Built With
