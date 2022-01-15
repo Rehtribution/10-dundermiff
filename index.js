@@ -142,6 +142,6 @@ function addIntern() {
 //done will create the team.html file
 function done() {
     console.log(team);
-    fs.writeFile('team.html', create(team), err => err ? console.log(err) : console.log("==========HTML page created!=========="));
+    fs.appendFile('team.html', create(team), err => err ? console.log(err) : console.log("==========HTML page created!=========="));
 }
 

@@ -78,5 +78,3 @@ module.exports = (team) => {
     </html>
     `
 }
-
-// issues: need to append file not replace
