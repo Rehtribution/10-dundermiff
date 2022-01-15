@@ -56,9 +56,14 @@ This is the tenth Challenge homework assignment and will meet the acceptance cri
 
 
 ## Screenshot/Media
+<h3 align="center">Link to Walkthrough</h3>
+<h3 align="center">https://drive.google.com/file/d/18o4zFH1GHJCwxWYoMX-e2L15-nEe4EP5/preview</h3>
 
-https://drive.google.com/file/d/18o4zFH1GHJCwxWYoMX-e2L15-nEe4EP5/preview
-
+![usageGif1](src\media\dunder-gif-t.gif)
+![usageGif1](src\media\dunder-gif-1.gif)
+![usageGif2](src\media\dunder-gif-2.gif)
+![usageGif3](src\media\dunder-gif-3.gif)
+![usageGif4](src\media\dunder-gif-4.gif)
 
 ## Deployed Link
 
