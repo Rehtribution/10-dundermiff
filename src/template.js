@@ -72,10 +72,11 @@ module.exports = (team) => {
     
     <!--footer-->
     <footer>
-        <h4>Team Generator Challenge 10</h4><a href="README.md">ReadMe</a>
+    <h4>Team Generator Challenge 10</h4><a href="README.md" target="_blank">ReadMe</a>
         &copy; 2021 Rehtribution
     </footer>
     </html>
     `
 }
 
+// issues: need to append file not replace
