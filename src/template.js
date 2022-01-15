@@ -5,7 +5,7 @@ const createTeam = (team) => {
         return `
             <div class="card">
                 <h2>${manager.getName()}</h2>
-                <p>${manager.getEmail()}</p>
+                <p><a href = ${manager.getEmail()}>${manager.getEmail()}</a></p>
                 <p>ID: ${manager.getId()}</p>
                 <p>Office Number: ${manager.getOfficeNumber()}</p>
             </div>
@@ -16,19 +16,18 @@ const createTeam = (team) => {
         return `
             <div class="card">
                 <h2>${engineer.getName()}</h2>
-                <p>${engineer.getEmail()}</p>
+                <p><a href = ${engineer.getEmail()}>${engineer.getEmail()}</a></p>
                 <p>ID: ${engineer.getId()}</p>
-                <p><a href="https://api.github.com/users/${engineer.github}">Github: ${engineer.getGithub()}</a></p>
+                <p><a href="https://github.com/${engineer.github}">Github: ${engineer.getGithub()}</a></p>
             </div>
         `
     }
-// api returns profile data but does not link to the github
     //framework for intern
     const createIntern = (intern) => {
         return `   
             <div class="card">
                 <h2>${intern.getName()}</h2>
-                <p>${intern.getEmail()}</p>
+                <p><a href = ${intern.getEmail()}>${intern.getEmail()}</a></p>
                 <p>ID: ${intern.getId()}</p>
                 <p>School: ${intern.getSchool()}</p>
             </div>
