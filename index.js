@@ -25,7 +25,13 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'managerEmail',
-        message: 'What is your managers email?'
+        message: 'What is your managers email?',
+// validating email format input using regex
+        validate: function(emailInput)
+        {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(emailInput);
+        }
     },
     {
         type: 'input',
@@ -75,7 +81,13 @@ function addEngineer() {
         {
             type: 'input',
             name: 'engineerEmail',
-            message: 'What is your engineers email?'
+            message: 'What is your engineers email?',
+// validating email format input using regex
+        validate: function(emailInput)
+        {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(emailInput);
+        }
         },
         {
             type: 'input',
@@ -106,7 +118,13 @@ function addIntern() {
         {
             type: 'input',
             name: 'internEmail',
-            message: 'What is your interns email?'
+            message: 'What is your interns email?',
+// validating email format input using regex
+        validate: function(emailInput)
+        {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(emailInput);
+        }
         },
         {
             type: 'input',

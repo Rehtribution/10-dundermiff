@@ -78,3 +78,5 @@ module.exports = (team) => {
     </html>
     `
 }
+
+// issues: email link not opening email service on click
