@@ -73,7 +73,8 @@ Team Profile Generator is an application that will generate a webpage that displ
 
 ## Deployed Link
 
-https://rehtribution.github.io/10-dundermiff/
+[![GitHub-Link - ClickHere](https://img.shields.io/badge/GitHub--Link-ClickHere-blue?style=for-the-badge)](https://rehtribution.github.io/10-dundermiff/)
+
 
 ## Usage
 This project aquires user input thorugh terminal prompts to generate a file containing a list of team members.
