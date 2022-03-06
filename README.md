@@ -18,8 +18,9 @@
 <h2 align="center">Project-Description</h2>
 Team Profile Generator is an application that will generate a webpage that displays my team's basic info so that I have quick access to their emails and GitHub profiles.
 
-This is the tenth Challenge homework assignment and will meet the acceptance criteria listed below:
+<h2 align="center">User Story</h2>
 
+```
 - GIVEN a command-line application that accepts user input
 
 - WHEN I am prompted for my team members and their information
@@ -53,6 +54,7 @@ This is the tenth Challenge homework assignment and will meet the acceptance cri
 - WHEN I decide to finish building my team
 
 - THEN I exit the application, and the HTML is generated
+```
 
 
 ## Screenshot/Media
@@ -105,8 +107,8 @@ npm i regex
 
 ## Author
 
-[![GitHub Portfolio -> - Rehtribution](https://img.shields.io/badge/GitHub_Portfolio_-->-Rehtribution-1f425f?style=for-the-badge)](https://github.com/Rehtribution)
+[![GitHub Portfolio -> - Rehtribution](https://img.shields.io/badge/GitHub_Portfolio_-->-Rehtribution-darkred?style=for-the-badge)](https://github.com/Rehtribution)
 
 ## Contributions
 
-- Help from tutor Anthony
+- Help from Anthony Parillo
