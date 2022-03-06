@@ -61,11 +61,13 @@ Team Profile Generator is an application that will generate a webpage that displ
 <h3 align="center">Link to Walkthrough</h3>
 <h3 align="center">https://drive.google.com/file/d/18o4zFH1GHJCwxWYoMX-e2L15-nEe4EP5/preview</h3>
 
-![usageGif1](src\media\dunder-gif-t.gif)
+![usageGif1](https://github.com/Rehtribution/10-dundermiff/blob/824b1e80ed12c6fb0a86054ba67a60c272429abe/src/media/dunder-gif-1.gif)
 ![usageGif1](src\media\dunder-gif-1.gif)
 ![usageGif2](src\media\dunder-gif-2.gif)
 ![usageGif3](src\media\dunder-gif-3.gif)
 ![usageGif4](src\media\dunder-gif-4.gif)
+
+
 
 ## Deployed Link
 
